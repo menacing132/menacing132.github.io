@@ -1,11 +1,29 @@
-/* ===== Global Styling ===== */
+/* ===== Reset ===== */
 body {
     margin: 0;
     padding: 0;
     font-family: Arial, sans-serif;
-    background: radial-gradient(circle at top, #0d0d1f, #000);
+    background: none;
     color: white;
     text-align: center;
+}
+
+/* ===== Background Video ===== */
+.bg-video {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    z-index: -1;
+}
+
+.bg-video iframe {
+    width: 100vw;
+    height: 100vh;
+    pointer-events: none;
+    object-fit: cover;
 }
 
 /* ===== Navigation Bar ===== */
@@ -14,63 +32,57 @@ nav {
     padding: 20px 0;
     display: flex;
     justify-content: center;
-    gap: 40px;
-    background: rgba(0, 0, 0, 0.3);
-    backdrop-filter: blur(6px);
-}
-
-nav h2.logo {
-    margin-right: 40px;
-    font-size: 24px;
-    color: white;
-}
-
-nav h2.logo span {
-    color: #d18cff;
+    gap: 50px;
+    position: absolute;
+    top: 0;
 }
 
 nav ul {
     list-style: none;
     display: flex;
-    gap: 30px;
+    gap: 40px;
 }
 
 nav ul li a {
-    color: #c9a0ff;
+    color: #ffffff;
+    font-size: 20px;
     text-decoration: none;
-    font-size: 18px;
-    transition: 0.3s;
+    font-weight: bold;
 }
 
-nav ul li a:hover,
-nav ul li .active {
-    color: #e2b3ff;
-    text-shadow: 0 0 10px #b873ff;
+.logo {
+    position: absolute;
+    left: 40px;
+    top: 20px;
+    font-size: 28px;
 }
 
-/* ===== Main Content ===== */
+.logo span {
+    color: #c57bff;
+}
+
+/* ===== Content Section ===== */
 .content {
-    margin-top: 120px;
+    margin-top: 200px;
 }
 
 .content h1 {
     font-size: 50px;
-    font-weight: bold;
 }
 
 .content h1 span {
-    color: #d18cff;
+    color: #c57bff;
 }
 
 .content p {
-    font-size: 18px;
+    font-size: 20px;
 }
 
 /* ===== IP Box ===== */
 .ip-box {
     margin-top: 40px;
     padding: 15px 25px;
-    background: rgba(255, 255, 255, 0.1);
+    background: rgba(0, 0, 0, 0.4);
     border-radius: 12px;
     display: inline-block;
     font-size: 22px;
@@ -81,12 +93,11 @@ nav ul li .active {
 .ip-box button {
     margin-left: 15px;
     padding: 8px 18px;
-    background: #b873ff;
+    background: #bb73ff;
     border: none;
     border-radius: 8px;
-    cursor: pointer;
-    color: black;
     font-weight: bold;
+    cursor: pointer;
     transition: 0.2s;
 }
 
