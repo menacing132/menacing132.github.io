@@ -1,16 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Malaky MC</title>
     <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
 
-    <!-- Background Video -->
+    <!-- Background -->
+    <div class="bg-overlay"></div>
     <video autoplay muted loop id="bgVideo">
         <source src="background.mp4" type="video/mp4">
     </video>
@@ -21,12 +20,12 @@
 
         <ul class="nav-links">
             <li><a href="index.html" class="active">Home</a></li>
-            <li><a href="store.html">Store</a></li>
+            <li><a href="#">Store</a></li>
             <li><a href="#">Games</a></li>
             <li><a href="#">Support</a></li>
         </ul>
 
-        <a href="https://discord.gg/8FJEanz9" class="discord-btn" target="_blank">Discord</a>
+        <a href="https://discord.gg/8FJEanz9" class="discord-btn">Join Discord</a>
     </nav>
 
     <!-- Content -->
@@ -40,16 +39,14 @@
         </div>
 
         <p class="players">Players Online: <span id="playerCount">0</span></p>
-
-        <a class="join-btn" href="https://discord.gg/8FJEanz9">Join Discord</a>
     </section>
 
-    <script>
-        function copyIP() {
-            navigator.clipboard.writeText("Coming Soon");
-            alert("IP Copied!");
-        }
-    </script>
+<script>
+    function copyIP() {
+        navigator.clipboard.writeText("Coming Soon");
+        alert("IP Copied!");
+    }
+</script>
 
 </body>
 </html>
