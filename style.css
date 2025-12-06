@@ -1,127 +1,118 @@
-/* ===== Global Styling ===== */
+/* ===== GLOBAL ===== */
 body {
     margin: 0;
     padding: 0;
     font-family: Arial, sans-serif;
-    background: url("background.jpg") no-repeat center center/cover;
     color: white;
-    text-align: center;
+    overflow-x: hidden;
 }
 
-/* ===== Navigation Bar ===== */
-nav {
-    width: 100%;
-    padding: 20px 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 40px;
-    background: rgba(0, 0, 0, 0.4);
+/* ===== Background ===== */
+.bg-overlay {
     position: fixed;
     top: 0;
-    z-index: 1000;
-    backdrop-filter: blur(6px);
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url("background.jpg") no-repeat center center/cover;
+    filter: brightness(50%) blur(2px);
+    z-index: -1;
+}
+
+/* ===== NAVBAR ===== */
+nav {
+    width: 100%;
+    padding: 25px 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 nav .logo {
-    position: absolute;
-    left: 40px;
-    font-size: 28px;
+    font-size: 32px;
     font-weight: bold;
 }
 
 nav .logo span {
-    color: #d18cff;
+    color: #d086ff;
 }
 
 nav ul {
     display: flex;
-    gap: 30px;
+    gap: 35px;
     list-style: none;
 }
 
-nav ul a {
+nav ul li a {
     text-decoration: none;
     color: white;
     font-size: 18px;
-    transition: 0.2s;
+    transition: 0.3s;
 }
 
-nav ul a:hover,
-nav ul .active {
-    color: #d18cff;
+nav ul li a:hover,
+nav ul li .active {
+    color: #d086ff;
 }
 
-/* ===== Main Content ===== */
+/* Discord button */
+.discord-btn {
+    padding: 10px 18px;
+    background: #a86bff;
+    border-radius: 10px;
+    color: white !important;
+    font-weight: bold;
+}
+
+/* ===== CONTENT ===== */
 .content {
-    margin-top: 160px;
+    text-align: center;
+    margin-top: 150px;
 }
 
 .content h1 {
-    font-size: 50px;
+    font-size: 55px;
+    font-weight: bold;
 }
 
-.content span {
-    color: #d18cff;
+.content h1 span {
+    color: #d086ff;
 }
 
-.subtitle {
-    font-size: 20px;
-    margin-top: 5px;
-}
-
-/* ===== IP Box ===== */
-.ip-box {
-    margin-top: 40px;
-    padding: 15px 25px;
-    background: rgba(255, 255, 255, 0.1);
-    border-radius: 12px;
-    display: inline-block;
+.sub {
     font-size: 22px;
-    border: 1px solid #a565ff;
-    backdrop-filter: blur(4px);
+    margin-top: 10px;
+}
+
+/* ===== IP BOX ===== */
+.ip-box {
+    margin: 40px auto;
+    padding: 25px 25px;
+    width: 350px;
+    background: rgba(255, 255, 255, 0.2);
+    border: 1px solid #d086ff;
+    border-radius: 12px;
+    backdrop-filter: blur(5px);
 }
 
 .ip-box button {
-    margin-left: 15px;
-    padding: 8px 18px;
-    background: #b873ff;
+    margin-top: 15px;
+    padding: 10px 20px;
+    background: #d086ff;
+    color: black;
     border: none;
     border-radius: 8px;
-    cursor: pointer;
     font-weight: bold;
-    transition: 0.2s;
+    cursor: pointer;
+    transition: 0.3s;
 }
 
 .ip-box button:hover {
-    background: #d7a8ff;
+    background: #b76fff;
 }
 
-/* ===== Player Counter ===== */
+/* ===== PLAYERS ===== */
 .players {
-    margin-top: 30px;
+    margin-top: 20px;
     font-size: 20px;
-    color: #d8b5ff;
-}
-
-/* ===== Discord Button Bottom Right ===== */
-.discord-btn {
-    position: fixed;
-    bottom: 25px;
-    right: 25px;
-    background: #8b46ff;
-    padding: 14px 22px;
-    border-radius: 10px;
-    color: white;
-    font-weight: bold;
-    text-decoration: none;
-    box-shadow: 0 0 20px #8b46ff50;
-    transition: 0.2s;
-    z-index: 9999;
-}
-
-.discord-btn:hover {
-    background: #a96eff;
-    box-shadow: 0 0 25px #a96eff80;
-    transform: scale(1.05);
 }
