@@ -9,7 +9,10 @@
 
 <body>
 
-    <!-- ===== Navigation Bar ===== -->
+    <!-- Background -->
+    <div class="bg-overlay"></div>
+
+    <!-- Navbar -->
     <nav>
         <h2 class="logo">MALAKY <span>MC</span></h2>
         <ul>
@@ -17,13 +20,15 @@
             <li><a href="store.html">Store</a></li>
             <li><a href="#">Games</a></li>
             <li><a href="#">Support</a></li>
+            <li><a href="https://discord.gg/8FJEanz9" class="discord-btn">Join Discord</a></li>
         </ul>
     </nav>
 
-    <!-- ===== Main Content ===== -->
-    <div class="content">
+    <!-- Main Content -->
+    <section class="content">
         <h1>Welcome to <span>Malaky MC</span></h1>
-        <p class="subtitle">أفضل سيرفر ماينكرافت عربي</p>
+
+        <p class="sub">أفضل سيرفر ماينكرافت عربي</p>
 
         <div class="ip-box">
             <p id="server-ip">IP: Coming Soon...</p>
@@ -31,19 +36,10 @@
         </div>
 
         <p class="players">Players Online: <span id="playerCount">0</span></p>
-    </div>
 
-    <!-- ===== Bottom Right Discord Button ===== -->
-    <a class="discord-btn" href="https://discord.gg/8FJEanz9" target="_blank">
-        Join Discord
-    </a>
+    </section>
 
-    <script>
-        function copyIP() {
-            navigator.clipboard.writeText("Coming Soon...");
-            alert("IP Copied!");
-        }
-    </script>
+    <script src="script.js"></script>
 
 </body>
 </html>
