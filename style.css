@@ -1,118 +1,94 @@
-/* ===== RESET ===== */
 * {
-    margin: 0;
     padding: 0;
+    margin: 0;
     box-sizing: border-box;
     font-family: Arial, sans-serif;
 }
 
-/* ===== Background Video ===== */
-.video-background {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    overflow: hidden;
-    z-index: -1;
+/* Background Image */
+body {
+    background: url("https://i.imgur.com/Mu7zZGO.jpeg") no-repeat center center fixed;
+    background-size: cover;
+    color: white;
 }
 
-.video-background video {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    filter: brightness(40%);
-}
-
-/* ===== NAVBAR ===== */
+/* NAVBAR */
 nav {
     width: 100%;
-    padding: 25px 80px;
+    padding: 20px 60px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    position: absolute;
-    top: 0;
-    left: 0;
 }
 
 .logo {
-    color: white;
     font-size: 32px;
     font-weight: bold;
 }
-
 .logo span {
     color: #c47aff;
 }
 
 nav ul {
     display: flex;
-    gap: 40px;
+    gap: 35px;
 }
 
 nav ul li {
     list-style: none;
 }
 
-nav a {
+nav ul li a {
     color: white;
-    text-decoration: none;
     font-size: 20px;
-    transition: 0.3s;
+    text-decoration: none;
+    transition: 0.2s;
 }
 
-nav a:hover,
-nav a.active {
-    color: #c47aff;
+nav ul li a:hover,
+nav ul li a.active {
+    color: #d28cff;
 }
 
-/* ===== MAIN CONTENT ===== */
+/* MAIN CONTENT */
 .content {
     text-align: center;
-    margin-top: 180px;
-    color: white;
+    margin-top: 150px;
 }
 
 .content h1 {
-    font-size: 60px;
-    font-weight: bold;
+    font-size: 55px;
 }
-
 .content h1 span {
     color: #c47aff;
 }
 
-.arabic {
+.sub {
     margin-top: 10px;
     font-size: 22px;
+    opacity: 0.9;
 }
 
-/* ===== INFO BOX (IP + PLAYERS) ===== */
-.info-box {
-    width: 380px;
-    background: rgba(0, 0, 0, 0.45);
-    padding: 25px;
-    margin: 25px auto;
-    border-radius: 18px;
-    border: 2px solid #b669ff;
+/* BOXES */
+.box {
+    width: 350px;
+    margin: 20px auto;
+    padding: 20px;
+    background: rgba(0,0,0,0.5);
+    border: 2px solid #b76cff;
+    border-radius: 15px;
     backdrop-filter: blur(5px);
-    color: white;
-    font-size: 20px;
-    text-align: center;
 }
 
-.info-box button {
+.box button {
     margin-top: 10px;
+    padding: 10px 25px;
     background: #c47aff;
     border: none;
-    padding: 10px 28px;
-    font-size: 18px;
-    border-radius: 10px;
+    border-radius: 8px;
     cursor: pointer;
-    transition: 0.3s;
 }
 
-.info-box button:hover {
-    background: #a856ff;
+.box button:hover {
+    background: #a95fed;
 }
