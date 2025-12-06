@@ -1,118 +1,144 @@
-/* ===== GLOBAL ===== */
-body {
+/* === Reset === */
+* {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
+}
+
+body {
     font-family: Arial, sans-serif;
     color: white;
+    text-align: center;
     overflow-x: hidden;
 }
 
-/* ===== Background ===== */
-.bg-overlay {
+/* === Video Background === */
+.video-background {
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    background: url("background.jpg") no-repeat center center/cover;
-    filter: brightness(50%) blur(2px);
-    z-index: -1;
+    z-index: -2;
+    overflow: hidden;
 }
 
-/* ===== NAVBAR ===== */
+.video-background video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: brightness(50%);
+}
+
+/* === Navbar === */
 nav {
     width: 100%;
-    padding: 25px 50px;
+    padding: 20px;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 10;
 }
 
 nav .logo {
-    font-size: 32px;
+    color: white;
+    font-size: 30px;
     font-weight: bold;
+    margin-left: 40px;
 }
 
 nav .logo span {
-    color: #d086ff;
+    color: #d38aff;
 }
 
 nav ul {
-    display: flex;
-    gap: 35px;
     list-style: none;
+    display: flex;
+    margin-right: 40px;
+}
+
+nav ul li {
+    margin-left: 25px;
 }
 
 nav ul li a {
-    text-decoration: none;
     color: white;
-    font-size: 18px;
+    text-decoration: none;
+    font-size: 20px;
     transition: 0.3s;
 }
 
 nav ul li a:hover,
 nav ul li .active {
-    color: #d086ff;
+    color: #d38aff;
 }
 
-/* Discord button */
-.discord-btn {
-    padding: 10px 18px;
-    background: #a86bff;
-    border-radius: 10px;
-    color: white !important;
-    font-weight: bold;
-}
-
-/* ===== CONTENT ===== */
+/* === Content === */
 .content {
-    text-align: center;
-    margin-top: 150px;
+    margin-top: 180px;
 }
 
 .content h1 {
-    font-size: 55px;
-    font-weight: bold;
+    font-size: 60px;
+    margin-bottom: 15px;
 }
 
 .content h1 span {
-    color: #d086ff;
+    color: #d38aff;
 }
 
-.sub {
+.content p {
     font-size: 22px;
-    margin-top: 10px;
 }
 
-/* ===== IP BOX ===== */
+/* === IP Box === */
 .ip-box {
-    margin: 40px auto;
-    padding: 25px 25px;
-    width: 350px;
-    background: rgba(255, 255, 255, 0.2);
-    border: 1px solid #d086ff;
-    border-radius: 12px;
-    backdrop-filter: blur(5px);
+    margin-top: 40px;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.15);
+    border-radius: 15px;
+    display: inline-block;
+    border: 1px solid #d38aff;
 }
 
 .ip-box button {
-    margin-top: 15px;
+    margin-top: 10px;
     padding: 10px 20px;
-    background: #d086ff;
-    color: black;
+    background: #d38aff;
+    color: white;
     border: none;
-    border-radius: 8px;
-    font-weight: bold;
+    font-size: 18px;
+    border-radius: 10px;
     cursor: pointer;
-    transition: 0.3s;
 }
 
 .ip-box button:hover {
-    background: #b76fff;
+    background: #b569e3;
 }
 
-/* ===== PLAYERS ===== */
+/* === Players Counter === */
 .players {
-    margin-top: 20px;
+    margin-top: 25px;
     font-size: 20px;
+}
+
+/* === Join Button (Bottom Right) === */
+.join-btn {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    background: #d38aff;
+    color: white;
+    padding: 15px 25px;
+    border-radius: 15px;
+    text-decoration: none;
+    font-size: 20px;
+    transition: 0.3s;
+}
+
+.join-btn:hover {
+    background: #b569e3;
 }
