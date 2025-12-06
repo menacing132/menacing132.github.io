@@ -9,45 +9,41 @@
 
 <body>
 
-    <!-- ===== Background Video ===== -->
-    <video autoplay muted loop id="bgVideo">
-        <source src="bg.mp4" type="video/mp4">
-    </video>
-
-    <!-- ===== NAVBAR ===== -->
+    <!-- ===== Navigation Bar ===== -->
     <nav>
         <h2 class="logo">MALAKY <span>MC</span></h2>
-
         <ul>
             <li><a href="index.html" class="active">Home</a></li>
             <li><a href="store.html">Store</a></li>
             <li><a href="#">Games</a></li>
             <li><a href="#">Support</a></li>
-
-            <!-- DISCORD BUTTON -->
-            <li>
-                <a href="https://discord.gg/8FJEanz9" class="discord-glass" target="_blank">
-                    <img src="https://cdn.jsdelivr.net/gh/twitter/twemoji@14.0.2/assets/svg/1f4ac.svg" class="dc-icon">
-                    Join Discord
-                </a>
-            </li>
         </ul>
     </nav>
 
-    <!-- ===== CONTENT ===== -->
+    <!-- ===== Main Content ===== -->
     <div class="content">
         <h1>Welcome to <span>Malaky MC</span></h1>
-        <p>أفضل سيرفر ماينكرافت عربي</p>
+        <p class="subtitle">أفضل سيرفر ماينكرافت عربي</p>
 
         <div class="ip-box">
             <p id="server-ip">IP: Coming Soon...</p>
             <button onclick="copyIP()">Copy</button>
         </div>
 
-        <p class="players">
-            Players Online: <span id="playerCount">0</span>
-        </p>
+        <p class="players">Players Online: <span id="playerCount">0</span></p>
     </div>
+
+    <!-- ===== Bottom Right Discord Button ===== -->
+    <a class="discord-btn" href="https://discord.gg/8FJEanz9" target="_blank">
+        Join Discord
+    </a>
+
+    <script>
+        function copyIP() {
+            navigator.clipboard.writeText("Coming Soon...");
+            alert("IP Copied!");
+        }
+    </script>
 
 </body>
 </html>
