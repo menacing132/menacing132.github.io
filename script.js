@@ -1,6 +1,6 @@
 function copyIP() {
     navigator.clipboard.writeText("Coming Soon...");
-    alert("Server IP copied!");
+    alert("IP copied!");
 }
 
 async function getPlayers() {
