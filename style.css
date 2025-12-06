@@ -50,9 +50,11 @@ nav .logo span {
 }
 
 nav ul {
-    list-style: none;
     display: flex;
     gap: 40px;
+    justify-content: center; /* يخلي العناصر بالنص */
+    align-items: center;
+    width: 100%;
 }
 
 nav ul li a {
