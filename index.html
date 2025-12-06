@@ -12,7 +12,7 @@
     <!-- ===== Video Background ===== -->
     <div class="video-background">
         <video autoplay loop muted playsinline>
-            <source src="bg.mp4" type="video/mp4">
+            <source src="video.mp4" type="video/mp4">
         </video>
     </div>
 
@@ -22,7 +22,7 @@
         <ul>
             <li><a href="index.html" class="active">Home</a></li>
             <li><a href="store.html">Store</a></li>
-            <li><a href="#">Games</a></li>
+            <li><a href="games.html">Games</a></li>
             <li><a href="#">Support</a></li>
             <li><a class="discord" href="https://discord.gg/8FJEanz9">Discord</a></li>
         </ul>
@@ -35,7 +35,7 @@
 
         <div class="ip-box">
             <p id="server-ip">IP: Coming Soon...</p>
-            <button onclick="copyIP()">Copy</button>
+            <button onclick="copyIP()">Copy IP</button>
         </div>
 
         <p class="players">Players Online: <span id="playerCount">0</span></p>
@@ -43,12 +43,6 @@
         <a class="join-btn" href="https://discord.gg/8FJEanz9">Join Discord</a>
     </div>
 
-    <script>
-        function copyIP() {
-            navigator.clipboard.writeText("Coming Soon");
-            alert("IP Copied!");
-        }
-    </script>
-
+    <script src="script.js"></script>
 </body>
 </html>
