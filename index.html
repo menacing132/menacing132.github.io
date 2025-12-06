@@ -9,47 +9,38 @@
 
 <body>
 
-    <!-- ===== Video Background ===== -->
-    <div class="video-background">
-        <video autoplay loop muted playsinline>
-            <source src="video.mp4" type="video/mp4">
-        </video>
-    </div>
-
-    <!-- ===== Navbar ===== -->
+    <!-- NAVBAR -->
     <nav>
         <h2 class="logo">MALAKY <span>MC</span></h2>
         <ul>
-            <li><a class="active" href="index.html">Home</a></li>
-            <li><a href="store.html">Store</a></li>
+            <li><a class="active" href="#">Home</a></li>
+            <li><a href="#">Store</a></li>
             <li><a href="#">Games</a></li>
             <li><a href="#">Support</a></li>
         </ul>
     </nav>
 
-    <!-- ===== Main Content ===== -->
-    <div class="content">
+    <!-- MAIN CONTENT -->
+    <section class="content">
         <h1>Welcome to <span>Malaky MC</span></h1>
-        <p class="arabic">أفضل سيرفر ماينكرافت عربي</p>
+        <p class="sub">أفضل سيرفر ماينكرافت عربي</p>
 
-        <!-- IP BOX -->
-        <div class="info-box">
+        <div class="box">
             <p>IP: Coming Soon...</p>
             <button onclick="copyIP()">Copy IP</button>
         </div>
 
-        <!-- PLAYERS ONLINE BOX -->
-        <div class="info-box players-box">
+        <div class="box">
             <p>Players Online: <span id="playerCount">0</span></p>
         </div>
-    </div>
+    </section>
 
-    <script>
-        function copyIP() {
-            navigator.clipboard.writeText("Coming Soon");
-            alert("IP Copied!");
-        }
-    </script>
+<script>
+function copyIP() {
+    navigator.clipboard.writeText("Coming Soon");
+    alert("Copied!");
+}
+</script>
 
 </body>
 </html>
