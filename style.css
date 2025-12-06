@@ -1,1 +1,103 @@
+/* ===== Global Styling ===== */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background: radial-gradient(circle at top, #0d0d1f, #000);
+    color: white;
+    text-align: center;
+}
+
+/* ===== Navigation Bar ===== */
+nav {
+    width: 100%;
+    padding: 20px 0;
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    background: rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(6px);
+}
+
+nav h2.logo {
+    margin-right: 40px;
+    font-size: 24px;
+    color: white;
+}
+
+nav h2.logo span {
+    color: #d18cff;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+}
+
+nav ul li a {
+    color: #c9a0ff;
+    text-decoration: none;
+    font-size: 18px;
+    transition: 0.3s;
+}
+
+nav ul li a:hover,
+nav ul li .active {
+    color: #e2b3ff;
+    text-shadow: 0 0 10px #b873ff;
+}
+
+/* ===== Main Content ===== */
+.content {
+    margin-top: 120px;
+}
+
+.content h1 {
+    font-size: 50px;
+    font-weight: bold;
+}
+
+.content h1 span {
+    color: #d18cff;
+}
+
+.content p {
+    font-size: 18px;
+}
+
+/* ===== IP Box ===== */
+.ip-box {
+    margin-top: 40px;
+    padding: 15px 25px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 12px;
+    display: inline-block;
+    font-size: 22px;
+    border: 1px solid #a565ff;
+    backdrop-filter: blur(4px);
+}
+
+.ip-box button {
+    margin-left: 15px;
+    padding: 8px 18px;
+    background: #b873ff;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    color: black;
+    font-weight: bold;
+    transition: 0.2s;
+}
+
+.ip-box button:hover {
+    background: #d7a8ff;
+}
+
+/* ===== Player Counter ===== */
+.players {
+    margin-top: 30px;
+    font-size: 20px;
+    color: #d8b5ff;
+}
 
