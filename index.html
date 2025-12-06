@@ -9,14 +9,14 @@
 
 <body>
 
-    <!-- ===== VIDEO BACKGROUND ===== -->
+    <!-- ===== Background Video ===== -->
     <div class="video-bg">
         <video autoplay loop muted playsinline>
             <source src="bg.mp4" type="video/mp4">
         </video>
     </div>
 
-    <!-- ===== NAVBAR ===== -->
+    <!-- ===== Navigation Bar ===== -->
     <nav>
         <h2 class="logo">MALAKY <span>MC</span></h2>
         <ul>
@@ -27,26 +27,25 @@
         </ul>
     </nav>
 
-    <!-- ===== MAIN CONTENT ===== -->
+    <!-- ===== Main Content ===== -->
     <div class="content">
         <h1>Welcome to <span>Malaky MC</span></h1>
-        <p class="subtitle">أفضل سيرفر ماينكرافت عربي</p>
+        <p class="sub">أفضل سيرفر ماينكرافت عربي</p>
 
         <div class="ip-box">
-            <p>IP: Coming Soon...</p>
+            <p id="server-ip">IP: Coming Soon...</p>
             <button onclick="copyIP()">Copy IP</button>
         </div>
 
-        <div class="player-box">
-            <p>Players Online: <span id="playerCount">0</span></p>
+        <div class="players-box">
+            Players Online: <span id="playerCount">0</span>
         </div>
-
     </div>
 
     <script>
         function copyIP() {
             navigator.clipboard.writeText("Coming Soon");
-            alert("Copied!");
+            alert("IP Copied!");
         }
     </script>
 
