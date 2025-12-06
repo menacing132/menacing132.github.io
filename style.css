@@ -1,24 +1,39 @@
-* {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-    font-family: Arial, sans-serif;
-}
-
-/* Background Image */
+/* ===== REMOVE MARGINS ===== */
 body {
-    background: url("https://i.imgur.com/Mu7zZGO.jpeg") no-repeat center center fixed;
-    background-size: cover;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
     color: white;
+    text-align: center;
 }
 
-/* NAVBAR */
+/* ===== VIDEO BACKGROUND ===== */
+.video-bg {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    overflow: hidden;
+}
+
+.video-bg video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: brightness(45%);
+}
+
+/* ===== NAVBAR ===== */
 nav {
     width: 100%;
-    padding: 20px 60px;
+    padding: 25px 80px;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    position: absolute;
+    top: 0;
 }
 
 .logo {
@@ -26,69 +41,83 @@ nav {
     font-weight: bold;
 }
 .logo span {
-    color: #c47aff;
+    color: #c47cff;
 }
 
 nav ul {
     display: flex;
-    gap: 35px;
-}
-
-nav ul li {
+    gap: 40px;
     list-style: none;
 }
 
 nav ul li a {
     color: white;
-    font-size: 20px;
     text-decoration: none;
-    transition: 0.2s;
+    font-size: 20px;
+    transition: 0.3s;
 }
 
 nav ul li a:hover,
-nav ul li a.active {
-    color: #d28cff;
+nav ul li .active {
+    color: #c47cff;
+    border-bottom: 2px solid #c47cff;
 }
 
-/* MAIN CONTENT */
+/* ===== MAIN CONTENT ===== */
 .content {
-    text-align: center;
-    margin-top: 150px;
+    margin-top: 190px;
 }
 
 .content h1 {
-    font-size: 55px;
-}
-.content h1 span {
-    color: #c47aff;
+    font-size: 60px;
+    font-weight: bold;
 }
 
-.sub {
-    margin-top: 10px;
+.content h1 span {
+    color: #c47cff;
+}
+
+.subtitle {
     font-size: 22px;
+    margin-top: -10px;
     opacity: 0.9;
 }
 
-/* BOXES */
-.box {
+/* ===== IP BOX ===== */
+.ip-box {
+    background: rgba(0, 0, 0, 0.55);
     width: 350px;
-    margin: 20px auto;
-    padding: 20px;
-    background: rgba(0,0,0,0.5);
-    border: 2px solid #b76cff;
+    margin: 40px auto;
+    padding: 25px;
     border-radius: 15px;
-    backdrop-filter: blur(5px);
+    border: 2px solid #c47cff;
 }
 
-.box button {
-    margin-top: 10px;
+.ip-box button {
     padding: 10px 25px;
-    background: #c47aff;
+    font-size: 18px;
+    background: #c47cff;
     border: none;
+    color: black;
+    font-weight: bold;
     border-radius: 8px;
     cursor: pointer;
+    transition: 0.3s;
 }
 
-.box button:hover {
-    background: #a95fed;
+.ip-box button:hover {
+    background: #e4b3ff;
+}
+
+/* ===== PLAYER BOX ===== */
+.player-box {
+    margin-top: 20px;
+    background: rgba(0,0,0,0.6);
+    width: 300px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 15px;
+    border-radius: 10px;
+    border: 2px solid #c47cff;
+    font-size: 20px;
 }
