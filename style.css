@@ -1,144 +1,206 @@
-/* === Reset === */
-* {
+/* ===== Global ===== */
+body {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
-}
-
-body {
     font-family: Arial, sans-serif;
+    background: black;
     color: white;
-    text-align: center;
     overflow-x: hidden;
 }
 
-/* === Video Background === */
+/* ===== Video Background ===== */
 .video-background {
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    z-index: -2;
     overflow: hidden;
+    z-index: -1;
 }
 
 .video-background video {
     width: 100%;
     height: 100%;
     object-fit: cover;
-    filter: brightness(50%);
+    filter: brightness(40%);
 }
 
-/* === Navbar === */
+/* ===== Navbar ===== */
 nav {
     width: 100%;
-    padding: 20px;
+    padding: 20px 50px;
     display: flex;
     justify-content: space-between;
     align-items: center;
     position: fixed;
     top: 0;
-    left: 0;
     z-index: 10;
+    background: rgba(0, 0, 0, 0.25);
+    backdrop-filter: blur(6px);
 }
 
 nav .logo {
-    color: white;
     font-size: 30px;
     font-weight: bold;
-    margin-left: 40px;
 }
 
 nav .logo span {
-    color: #d38aff;
+    color: #d18cff;
 }
 
 nav ul {
     list-style: none;
     display: flex;
-    margin-right: 40px;
-}
-
-nav ul li {
-    margin-left: 25px;
+    gap: 40px;
 }
 
 nav ul li a {
     color: white;
+    font-size: 18px;
     text-decoration: none;
-    font-size: 20px;
     transition: 0.3s;
 }
 
 nav ul li a:hover,
 nav ul li .active {
-    color: #d38aff;
+    color: #d18cff;
 }
 
-/* === Content === */
+.discord {
+    background: #d18cff;
+    padding: 10px 18px;
+    border-radius: 8px;
+    font-weight: bold;
+}
+
+/* ===== Home Content ===== */
 .content {
+    text-align: center;
     margin-top: 180px;
 }
 
 .content h1 {
     font-size: 60px;
-    margin-bottom: 15px;
+    font-weight: bold;
 }
 
 .content h1 span {
-    color: #d38aff;
+    color: #d18cff;
 }
 
 .content p {
-    font-size: 22px;
+    margin-top: 10px;
+    font-size: 20px;
 }
 
-/* === IP Box === */
+/* ===== IP Box ===== */
 .ip-box {
     margin-top: 40px;
-    padding: 20px;
+    padding: 25px;
     background: rgba(255, 255, 255, 0.15);
     border-radius: 15px;
     display: inline-block;
-    border: 1px solid #d38aff;
+    border: 1px solid #a565ff;
+    backdrop-filter: blur(4px);
 }
 
 .ip-box button {
-    margin-top: 10px;
+    margin-top: 15px;
     padding: 10px 20px;
-    background: #d38aff;
-    color: white;
+    background: #d18cff;
     border: none;
-    font-size: 18px;
-    border-radius: 10px;
+    border-radius: 8px;
+    font-weight: bold;
     cursor: pointer;
+    color: black;
+    transition: 0.2s;
 }
 
 .ip-box button:hover {
-    background: #b569e3;
+    background: #e383ff;
 }
 
-/* === Players Counter === */
+/* ===== Players ===== */
 .players {
-    margin-top: 25px;
+    margin-top: 20px;
     font-size: 20px;
+    color: #d8b5ff;
 }
 
-/* === Join Button (Bottom Right) === */
+/* ===== Join Button (Bottom Right) ===== */
 .join-btn {
     position: fixed;
-    bottom: 30px;
-    right: 30px;
-    background: #d38aff;
-    color: white;
+    bottom: 20px;
+    right: 20px;
+    background: #d18cff;
     padding: 15px 25px;
-    border-radius: 15px;
+    border-radius: 10px;
     text-decoration: none;
-    font-size: 20px;
+    color: black;
+    font-weight: bold;
     transition: 0.3s;
 }
 
 .join-btn:hover {
-    background: #b569e3;
+    background: #e383ff;
+}
+
+/* ===== Games Page ===== */
+.games-section {
+    padding: 140px 20px;
+    text-align: center;
+    color: white;
+}
+
+.games-title {
+    font-size: 48px;
+    margin-bottom: 40px;
+    color: #d18cff;
+}
+
+.games-container {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+
+.game-card {
+    width: 320px;
+    padding: 20px;
+    border-radius: 16px;
+    background: rgba(255,255,255,0.08);
+    border: 1px solid rgba(255,255,255,0.2);
+    backdrop-filter: blur(8px);
+    transition: 0.3s;
+}
+
+.game-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0px 0px 20px #d18cff;
+}
+
+.game-card img {
+    width: 100%;
+    border-radius: 12px;
+}
+
+.game-card h2 {
+    margin-top: 15px;
+    color: #e6b0ff;
+}
+
+.game-card p {
+    opacity: 0.8;
+}
+
+.tag {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 6px 14px;
+    border-radius: 10px;
+    border: 1px solid #d18cff;
+    background: #d18cff33;
+    color: #ffdfff;
 }
