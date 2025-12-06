@@ -1,4 +1,4 @@
-/* ===== Reset ===== */
+/* ===== RESET ===== */
 body {
     margin: 0;
     padding: 0;
@@ -9,24 +9,18 @@ body {
 }
 
 /* ===== Background Video ===== */
-.bg-video {
+#bgVideo {
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    overflow: hidden;
-    z-index: -1;
-}
-
-.bg-video iframe {
-    width: 100vw;
-    height: 100vh;
-    pointer-events: none;
     object-fit: cover;
+    z-index: -1;
+    filter: brightness(45%); /* بخفف الإضاءة */
 }
 
-/* ===== Navigation Bar ===== */
+/* ===== NAVBAR ===== */
 nav {
     width: 100%;
     padding: 20px 0;
@@ -48,26 +42,34 @@ nav ul li a {
     font-size: 20px;
     text-decoration: none;
     font-weight: bold;
+    transition: 0.3s;
+}
+
+nav ul li a:hover,
+nav ul li .active {
+    color: #c57bff;
 }
 
 .logo {
     position: absolute;
     left: 40px;
-    top: 20px;
+    top: 15px;
     font-size: 28px;
+    font-weight: bold;
 }
 
 .logo span {
     color: #c57bff;
 }
 
-/* ===== Content Section ===== */
+/* ===== CONTENT ===== */
 .content {
     margin-top: 200px;
 }
 
 .content h1 {
     font-size: 50px;
+    font-weight: bold;
 }
 
 .content h1 span {
@@ -78,7 +80,7 @@ nav ul li a {
     font-size: 20px;
 }
 
-/* ===== IP Box ===== */
+/* ===== IP BOX ===== */
 .ip-box {
     margin-top: 40px;
     padding: 15px 25px;
@@ -105,7 +107,7 @@ nav ul li a {
     background: #d7a8ff;
 }
 
-/* ===== Player Counter ===== */
+/* ===== PLAYER COUNTER ===== */
 .players {
     margin-top: 30px;
     font-size: 20px;
