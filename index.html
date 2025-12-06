@@ -17,16 +17,24 @@
     <!-- ===== NAVBAR ===== -->
     <nav>
         <h2 class="logo">MALAKY <span>MC</span></h2>
+
         <ul>
             <li><a href="index.html" class="active">Home</a></li>
             <li><a href="store.html">Store</a></li>
             <li><a href="#">Games</a></li>
             <li><a href="#">Support</a></li>
-            <li><a class="discord" href="#">Discord</a></li>
+
+            <!-- DISCORD BUTTON -->
+            <li>
+                <a href="https://discord.gg/8FJEanz9" class="discord-glass" target="_blank">
+                    <img src="https://cdn.jsdelivr.net/gh/twitter/twemoji@14.0.2/assets/svg/1f4ac.svg" class="dc-icon">
+                    Join Discord
+                </a>
+            </li>
         </ul>
     </nav>
 
-    <!-- ===== MAIN CONTENT ===== -->
+    <!-- ===== CONTENT ===== -->
     <div class="content">
         <h1>Welcome to <span>Malaky MC</span></h1>
         <p>أفضل سيرفر ماينكرافت عربي</p>
@@ -36,7 +44,9 @@
             <button onclick="copyIP()">Copy</button>
         </div>
 
-        <p class="players">Players Online: <span id="playerCount">0</span></p>
+        <p class="players">
+            Players Online: <span id="playerCount">0</span>
+        </p>
     </div>
 
 </body>
